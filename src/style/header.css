@@ -1,0 +1,79 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url("/assets/images/background.jpg") center;
+}
+
+.header-contacts {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50px;
+    top: 230px;
+    gap: 5px;
+    writing-mode: vertical-rl;
+}
+
+.header-contacts__text {
+    transform: scale(-1);
+}
+
+.contacts-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.facebook-button {
+    background: url("/assets/icons/facebook.svg") no-repeat;
+}
+
+.instagram-button {
+    background: url("/assets/icons/instagram.svg") no-repeat;
+
+}
+
+.git-button {
+    background: url("/assets/icons/github.svg") no-repeat;
+}
+
+.border-contacts {
+    height: 70px;
+    border-left: 2px solid black;
+}
+
+.header-content {
+    width: 532px;
+    padding-top: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-content__buttons {
+    margin-top: 25px;
+}
+
+.burger-menu {
+    top: 20px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-content {
+        width: 300px;
+    }
+
+    .header-contacts {
+        display: none;
+    }
+
+    .burger-menu {
+        right: 20px;
+    }
+}

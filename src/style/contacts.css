@@ -1,0 +1,114 @@
+.contacts {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contacts-icon {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.input-contacts {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.input-name {
+    width: 270px;
+    height: 45px;
+}
+
+.input-message {
+    height: 170px;
+}
+
+.input-layout {
+    width: 45%;
+    position: relative;
+}
+
+
+.input-layout > textarea {
+    border: 1px solid black;
+    width: 210%;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+.input-layout > label {
+    position: absolute;
+    top: -14px;
+    left: 15px;
+    background: white;
+    border: 5px solid white;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: inherit;
+
+}
+
+.contacts-checkbox {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        margin-top: 46px;
+    }
+
+    .input-layout {
+        width: 100%;
+        position: relative;
+    }
+
+    .input-contacts {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .input-message {
+        width: 94% !important;
+        height: 143px;
+    }
+
+    .contacts-image {
+        display: none;
+    }
+
+    .contacts-checkbox {
+        display: flex;
+        width: fit-content;
+        gap: 10px;
+        padding: 20px 0;
+        margin: 0 auto;
+
+    }
+
+    .contacts-p {
+        width: 159px;
+    }
+
+    .contacts-policy {
+        margin: 0 auto;
+    }
+
+    .contacts-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .input-layout > input {
+        border: 1px solid black;
+        width: 94%;
+        padding-left: 15px;
+    }
+}

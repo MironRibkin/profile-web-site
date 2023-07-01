@@ -1,0 +1,101 @@
+.experience-title {
+    margin-top: 126px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-content {
+    padding-left: 72px;
+    display: flex;
+    margin-top: 84px;
+
+}
+
+.experience-education {
+    margin-left: 22px;
+    padding-left: 0;
+    margin-top: 40px;
+    position: relative;
+    width: 50%;
+    border-left: 1px solid black;
+}
+
+.experience-content__skills {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 40px;
+    position: absolute;
+    background: white;
+    top: -68px;
+    left: 21px;
+}
+
+
+.experience-content__skills-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-wrapper > p {
+    padding-left: 22px;
+    padding-top: 43px;
+    position: relative;
+}
+
+.experience-wrapper > p:before {
+    position: absolute;
+    width: 33px;
+    height: 20px;
+    content: "";
+    left: 0;
+    top: 0;
+    border-top: 1px solid black;
+}
+
+.experience-circle:after {
+    margin-left: 42px;
+}
+
+.experience-h3 {
+    margin-left: 22px;
+}
+
+.experience-wrapper {
+    margin-top: 40px;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .experience-title {
+        margin-top: 50px;
+    }
+
+    .experience-content {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .experience-work {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .experience-content__skills {
+        width: 270px;
+        margin-top: 40px;
+        position: absolute;
+        background: white;
+        top: -68px;
+        left: 21px;
+    }
+
+    .experience-circle:after {
+        margin-left: 22px;
+    }
+}

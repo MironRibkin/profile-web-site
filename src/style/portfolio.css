@@ -1,0 +1,71 @@
+.portfolio__content {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.image-uber {
+    grid-area: 1 / 1 / 2 / 2;
+    background: url("/assets/images/uber.jpg") no-repeat;
+
+}
+
+.image-pulse {
+    grid-area: 1 / 2 / 2 / 3;
+    background: url("/assets/images/pulse.jpg") no-repeat;
+
+}
+
+.image-bread {
+    grid-area: 1 / 3 / 2 / 4;
+    background: url("/assets/images/bread.jpg") no-repeat;
+}
+
+.image-plans {
+    grid-area: 1 / 4 / 3 / 5;
+    background: url("/assets/images/plans.jpg") no-repeat;
+    height: 565px;
+    width: 100%;
+
+}
+
+.image-ipad {
+    grid-area: 2 / 1 / 3 / 2;
+    background: url("/assets/images/ipad.jpg") no-repeat;
+}
+
+.image-mac {
+    grid-area: 2 / 2 / 3 / 4;
+    background: url("/assets/images/mac.jpg") no-repeat;
+    object-fit: contain;
+    height: 280px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .portfolio__content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .image-plans {
+        height: 280px;
+    }
+
+    .image-mac {
+        width: 280px;
+    }
+
+    .image-size {
+        height: 280px;
+        width: 280px;
+    }
+
+}

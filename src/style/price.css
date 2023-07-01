@@ -1,0 +1,30 @@
+
+.price-content {
+    margin-top: 60px;
+    padding-left: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-content__skills-text__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-content__box {
+    margin-bottom: 15px;
+}
+
+.price-content__box-left {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .price-content {
+        flex-direction: column;
+        margin-top: 20px;
+        padding-left: 45px;
+    }
+}
